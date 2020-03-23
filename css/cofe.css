@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow: hidden;
+    color:#ffff;
+    /* font-family: '微软雅黑'; */
+    font-family: 'Flamenco', cursive;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.719); 
+    background-image: url(../images/OAI28L0.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: backgound-color 0.3s,border 0.3s;
+    border-radius: 200px;
+    /* border: 2px solid white ; */
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec; 
+   
+    /* border-radius: 10%; */
+}
+.btn-nev{
+    background-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+    border: 1px solid white; 
+}
+.btn-full:hover{
+    background-color: rgb(255, 255, 255);
+    
+    margin-right: 15px;
+    border: 2px solid rgb(146, 28, 192); 
+}
+.btn-nev:hover{
+    background-color: rgb(134, 17, 163);
+    
+    margin-right: 15px;
+    border: 2px solid rgb(255, 255, 255); 
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo {
+    height: 110px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+.main-nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.main-nav li a{
+    padding-top: 5px;
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: 40px;  */
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100; 
+}
+.main-nav li a:hover{
+   
+    border-bottom:2px solid #8d37b3;
+
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* border: 1px solid red; */
+    transform: translate(-50%,-50%);
+}
+.colorchange{
+    animation: colorchangegethapa 1s infinite;
+
+}
+@keyframes colorchangegethapa{
+    0%{color: #8d37b3;}
+    25%{color: #bf55ec;}
+    50%{color: #fff;}
+   100%{color: red;}
+}
