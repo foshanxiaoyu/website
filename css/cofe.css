@@ -125,3 +125,82 @@ h1 {
     50%{color: #fff;}
    100%{color: red;}
 }
+
+.testbox {
+    width: 1180px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border: 1px solid red;
+    
+
+}
+/* .test_h1 {
+    color: aqua;
+    animation: slidein 3s infinite;
+  }
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+  } */
+  .mobile1-icon {
+    display: none;
+}
+  @media only screen and (max-width:1180px) {
+    .main-content-header {
+        width: 100%;
+        padding:0 2%;
+    }
+  }
+  @media only screen and (max-width:998px) {
+    .test_h1 {
+        font-size: 200%;
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .test_h1 {
+        font-size: 160%;
+    }
+    .main-nav{display: none;}
+    .mobile1-icon {
+        display: block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;       
+    }
+    .main-nav{
+        float: left;
+        /* display: block;
+        margin-top: 10px; */
+    }
+    .main-nav li{
+        /* float: left; */
+        display: block;
+        margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width:480px){
+    /* .btn{display: block;}   */
+    .btn-full{
+          margin-bottom: 10px;
+      }
+      .btn-nev{ margin-top: 10px;}
+      .test_h1{
+          font-size: 120%;
+      }
+  }

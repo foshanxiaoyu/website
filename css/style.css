@@ -4,6 +4,31 @@ html, body{
 	background:#ffffff;
 	margin: 0;
 }
+.test_h2{
+	color: #0accff;
+	animation: slidein 10s infinite;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+	  55% {
+        font-size: 200%;
+        margin-left: 15%;
+        width: 200%;
+      }
+      75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+  }
 p,ul li,ol li{
 	margin:0;
 	font-size:1em;
